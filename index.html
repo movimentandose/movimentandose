@@ -267,6 +267,74 @@ header{
     font-size:16px;
 }
 
+.portfolio{
+    background:#e8e8e5;
+}
+
+.portfolio-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:24px;
+}
+
+.portfolio-card{
+    min-height:440px;
+    border-radius:30px;
+    background:#111;
+    color:#fff;
+    position:relative;
+    overflow:hidden;
+    transition:transform .35s, box-shadow .35s;
+}
+
+.portfolio-card::before{
+    content:"";
+    position:absolute;
+    inset:0 auto auto 0;
+    width:100%;
+    height:48%;
+    background-image:var(--portfolio-image);
+    background-size:cover;
+    background-position:center;
+}
+
+.portfolio-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 18px 35px rgba(0,0,0,.14);
+}
+
+.portfolio-label{
+    font-size:12px;
+    font-weight:700;
+    letter-spacing:1.2px;
+    margin-bottom:15px;
+}
+
+.portfolio-card h3{
+    font-size:31px;
+    line-height:1.05;
+    margin-bottom:14px;
+}
+
+.portfolio-card p{
+    font-size:15px;
+    line-height:1.7;
+    opacity:.8;
+}
+
+.portfolio-link{
+    min-height:230px;
+    width:100%;
+    margin:48% 0 0;
+    padding:34px;
+    background:#111;
+    color:inherit;
+    text-decoration:none;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-end;
+}
+
 .marketplaces{
     background:#000;
     color:#fff;
@@ -282,7 +350,7 @@ header{
 }
 
 .marketplaces h2{
-    font-size:64px;
+    font-size:54px;
     line-height:1;
     letter-spacing:-3px;
     margin-bottom:30px;
@@ -373,6 +441,17 @@ header{
     color:#444;
 }
 
+.contract-note{
+    margin:-12px 0 28px;
+    font-size:14px;
+    line-height:1.6;
+    color:#666;
+}
+
+.price-card.featured .contract-note{
+    color:#d4d4d4;
+}
+
 .consult{
     background:#111;
     color:#fff;
@@ -408,6 +487,10 @@ footer{
 
     .hero-grid,
     .marketplace-grid{
+        grid-template-columns:1fr;
+    }
+
+    .portfolio-grid{
         grid-template-columns:1fr;
     }
 
@@ -481,6 +564,7 @@ footer{
 
         <div class="menu">
             <a href="#servicos">SERVIÇOS</a>
+            <a href="#portfolio">PORTFÓLIO</a>
             <a href="#marketplaces">MERCADO DIGITAL</a>
             <a href="#valores">PLANOS</a>
             <a href="#contato">CONTATO</a>
@@ -505,12 +589,7 @@ footer{
             </h1>
 
             <p>
-                Você empreendedor, prestador de serviço, dono de restaurante, loja, imóvel de temporada ou marca própria: se sua empresa ainda não tem presença online estruturada, você está deixando oportunidades passarem todos os dias.
-            </p>
-
-            <p>
-                A Movimentando-se cria a presença digital da sua empresa e direciona o seu posicionamento no mercado.
-                Desde landing pages profissionais até estruturação para marketplaces, plataformas de delivery, aluguel por temporada e fortalecimento de marca.
+                Criamos sites, identidades visuais e estratégias para sua marca ser encontrada, transmitir confiança e crescer no digital.
             </p>
 
             <div class="hero-buttons">
@@ -541,30 +620,9 @@ footer{
             </div>
 
             <div class="card-item">
-                <h4>Mercado Digital & Marketplaces</h4>
-                <p>
-                    Direcionamos sua entrada no digital: iFood, 99Food, marketplaces, Airbnb, vendas online e plataformas digitais.
-                </p>
-            </div>
-
-            <div class="card-item">
-                <h4>Posicionamento & Identidade Visual</h4>
-                <p>
-                    Construímos uma marca forte, profissional e alinhada com o público que você quer alcançar.
-                </p>
-            </div>
-
-            <div class="card-item">
                 <h4>Consultoria Estratégica</h4>
                 <p>
                     Reuniões e acompanhamento para entender seu projeto e estruturar o melhor caminho para crescimento.
-                </p>
-            </div>
-
-            <div class="card-item">
-                <h4>Bônus Exclusivo</h4>
-                <p>
-                    Ao adquirir nossos serviços, você ganha uma landing page profissional completa para fortalecer sua presença online e apresentar sua empresa de forma estratégica.
                 </p>
             </div>
 
@@ -600,27 +658,104 @@ footer{
 
             <div class="service-card">
                 <div class="service-number">02</div>
-                <h3>Restaurantes & Delivery</h3>
-                <p>
-                    Direcionamento para iFood, presença digital, identidade visual e fortalecimento do posicionamento local.
-                </p>
-            </div>
-
-            <div class="service-card">
-                <div class="service-number">03</div>
-                <h3>Imóveis de Temporada</h3>
-                <p>
-                    Estruturamos sua presença para aluguel em Airbnb, Booking e plataformas de temporada.
-                </p>
-            </div>
-
-            <div class="service-card">
-                <div class="service-number">04</div>
                 <h3>Marketplace & Ecommerce</h3>
                 <p>
-                    Auxiliamos empresas que querem começar a vender online e entrar em marketplaces de forma estratégica.
+                    Auxiliamos empresas que querem começar a vender online e entrar em marketplaces de forma estratégica. Também ajudamos a expandir operações de quem já vende.
                 </p>
             </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="portfolio" id="portfolio">
+
+    <div class="container">
+
+        <h2 class="section-title">
+            Projetos que ganharam<br>
+            movimento no digital.
+        </h2>
+
+        <p class="section-description">
+            Uma seleção de soluções pensadas para apresentar crescimento e expansão com estratégia no médio e longo prazo de cada empresa.
+        </p>
+
+        <div class="portfolio-grid">
+
+            <article class="portfolio-card" style="--portfolio-image:url('assets/due-corretora.jpg');">
+                <a class="portfolio-link" href="https://www.google.com/search?q=Due+Corretora+de+Seguros" target="_blank" rel="noopener noreferrer">
+                    <div class="portfolio-label">SEGUROS</div>
+                    <h3>Due Corretora de Seguros</h3>
+                    <p>Criação de site e produção de conteúdo para Instagram.</p>
+                </a>
+            </article>
+
+            <article class="portfolio-card" style="--portfolio-image:url('assets/psicologia-viva.jpg.png');">
+                <a class="portfolio-link" href="https://www.google.com/search?q=Psicologia+Viva" target="_blank" rel="noopener noreferrer">
+                    <div class="portfolio-label">APLICATIVO</div>
+                    <h3>Psicologia Viva</h3>
+                    <p>Pesquisa e redesign do aplicativo para aprimorar a experiência do usuário dentro da plataforma.</p>
+                </a>
+            </article>
+
+            <article class="portfolio-card" style="--portfolio-image:url('assets/ata-bronze-distribuidora.jpg.png');">
+                <a class="portfolio-link" href="https://www.google.com/search?q=Ata+Bronze+Distribuidora" target="_blank" rel="noopener noreferrer">
+                    <div class="portfolio-label">DISTRIBUIDORA</div>
+                    <h3>Ata Bronze Distribuidora</h3>
+                    <p>Criação do site, implantação de plataformas digitais e do setor logístico, treinamento de equipe e estratégia de expansão.</p>
+                </a>
+            </article>
+
+            <article class="portfolio-card" style="--portfolio-image:url('assets/dona-dagi-boutique.jpg.png');">
+                <a class="portfolio-link" href="https://www.google.com/search?q=Dona+Dagi+Boutique" target="_blank" rel="noopener noreferrer">
+                    <div class="portfolio-label">BOUTIQUE</div>
+                    <h3>Dona Dagi Boutique</h3>
+                    <p>Implantação de plataformas digitais, treinamento de equipe, análise financeira ponta a ponta e estratégias de melhoria.</p>
+                </a>
+            </article>
+
+            <article class="portfolio-card" style="--portfolio-image:url('assets/verita-hair.jpg.png');">
+                <a class="portfolio-link" href="https://www.google.com/search?q=Verita+Hair" target="_blank" rel="noopener noreferrer">
+                    <div class="portfolio-label">BELEZA</div>
+                    <h3>Veritá Hair</h3>
+                    <p>Criação do site, implantação de plataformas digitais e análise do cenário de mega hair no mercado digital.</p>
+                </a>
+            </article>
+
+            <article class="portfolio-card" style="--portfolio-image:url('assets/lua-e-leo-brindes.jpg.png');">
+                <a class="portfolio-link" href="https://www.google.com/search?q=Lua+e+Leo+Brindes" target="_blank" rel="noopener noreferrer">
+                    <div class="portfolio-label">BRINDES</div>
+                    <h3>Lua e Léo Brindes</h3>
+                    <p>Criação do site e análise de negócio para impulsionar o crescimento além das plataformas digitais.</p>
+                </a>
+            </article>
+
+            <article class="portfolio-card" style="--portfolio-image:url('assets/iphones-today.jpg.png');">
+                <a class="portfolio-link" href="https://www.google.com/search?q=iPhones+Today" target="_blank" rel="noopener noreferrer">
+                    <div class="portfolio-label">TECNOLOGIA</div>
+                    <h3>iPhones Today</h3>
+                    <p>Criação do site, presença digital, Google Meu Negócio e consultoria para expansão e estratégia de negócio.</p>
+                </a>
+            </article>
+
+            <article class="portfolio-card" style="--portfolio-image:url('assets/mistura-fina.jpg.png');">
+                <a class="portfolio-link" href="https://www.google.com/search?q=Mistura+Fina+Beauty" target="_blank" rel="noopener noreferrer">
+                    <div class="portfolio-label">BELEZA</div>
+                    <h3>Mistura Fina Beauty</h3>
+                    <p>Criação do site, implantação de plataformas digitais, acompanhamento e execução para crescimento digital, solução de problemas e análise constante.</p>
+                </a>
+            </article>
+
+            <article class="portfolio-card" style="--portfolio-image:url('assets/nt-mix-distribuidora.jpg.png');">
+                <a class="portfolio-link" href="https://www.google.com/search?q=NT+Mix+Distribuidora" target="_blank" rel="noopener noreferrer">
+                    <div class="portfolio-label">DISTRIBUIDORA</div>
+                    <h3>NT Mix Distribuidora</h3>
+                    <p>Criação de landing page para captação de novos clientes, consultoria e execução na implantação de plataformas digitais.</p>
+                </a>
+            </article>
 
         </div>
 
@@ -650,23 +785,16 @@ footer{
             <div class="market-list">
 
                 <div class="market-item">
-                    <h4>iFood & Delivery</h4>
-                    <p>
-                        Estruturação e direcionamento para restaurantes e deliverys.
-                    </p>
-                </div>
-
-                <div class="market-item">
-                    <h4>Airbnb & Temporada</h4>
-                    <p>
-                        Posicionamento para imóveis de aluguel e hospedagem.
-                    </p>
-                </div>
-
-                <div class="market-item">
                     <h4>Marketplace & Ecommerce</h4>
                     <p>
                         Entrada estratégica no mercado digital e vendas online.
+                    </p>
+                </div>
+
+                <div class="market-item">
+                    <h4>Google Meu Negócio</h4>
+                    <p>
+                        Estruturação da presença local para sua empresa aparecer nas buscas do Google.
                     </p>
                 </div>
 
@@ -699,25 +827,28 @@ footer{
                 </div>
 
                 <h3>
-                    1 mês de acompanhamento estratégico
+                    Acompanhamento estratégico
                 </h3>
 
                 <div class="price">
-                    R$999,90
+                    R$999,90/mês
                 </div>
 
                 <div class="installments">
-                    À vista ou parcelado em até 12x
+                    Ou R$5.000 em 6x, no contrato de 6 meses de acompanhamento estratégico.
                 </div>
 
                 <ul>
-                    <li>✔ Reuniões semanais</li>
-                    <li>✔ Entendimento completo do projeto</li>
-                    <li>✔ Direcionamento estratégico</li>
-                    <li>✔ Posicionamento digital</li>
-                    <li>✔ Acompanhamento de crescimento</li>
-                    <li>✔ Landing page profissional inclusa</li>
+                    <li>✔ Reuniões mensais ou quinzenais, conforme a necessidade do projeto</li>
+                    <li>✔ Análise de perfil e análise financeira</li>
+                    <li>✔ Direcionamento para expansão do negócio</li>
+                    <li>✔ Implantação de plataformas digitais: Mercado Livre, Shopee e TikTok</li>
+                    <li>✔ Planilha para organização</li>
+                    <li>✔ Cadastro de até 30 SKUs, do zero</li>
+                    <li>✔ Criação do site</li>
                 </ul>
+
+                <p class="contract-note">Atendimento mediante contrato. Consulte as condições.</p>
 
                 <a href="https://wa.me/5511959605443?text=Ol%C3%A1%2C%20eu%20gostaria%20de%20saber%20mais%20sobre%20a%20Consultoria%20Acompanhada." class="btn btn-primary">
                     QUERO COMEÇAR
@@ -728,36 +859,30 @@ footer{
             <div class="price-card">
 
                 <div class="price-tag">
-                    IDENTIDADE VISUAL
+                    SUPORTE PARA QUEM JÁ VENDE
                 </div>
 
                 <h3>
-                    Posicionamento e construção de marca
+                    Suporte para operações digitais
                 </h3>
 
                 <div class="price">
-                    R$799,90
+                    R$350,00/mês
                 </div>
 
                 <div class="installments">
-                    Parcelamento em até 12x
+                    Apoio técnico e estratégico para a sua operação continuar crescendo.
                 </div>
 
                 <ul>
-                    <li>✔ Construção da identidade visual</li>
-                    <li>✔ Direcionamento visual da marca</li>
-                    <li>✔ Posicionamento estratégico</li>
-                    <li>✔ Comunicação profissional</li>
-                    <li>✔ Estrutura visual para digital</li>
-                    <li>✔ Landing page profissional inclusa</li>
+                    <li>✔ Suporte para resolver problemas no Mercado Livre, Shopee, TikTok e Bling ERP</li>
+                    <li>✔ Instalação de impressoras</li>
+                    <li>✔ Consultoria para dúvidas sobre o funcionamento das plataformas</li>
+                    <li>✔ Configurações fiscais</li>
                 </ul>
 
-                <a href="https://wa.me/5511959605443?text=Ol%C3%A1%2C%20eu%20gostaria%20de%20saber%20mais%20sobre%20a%20Constru%C3%A7%C3%A3o%20de%20Identidade%20Visual." class="btn btn-outline">
+                <a href="https://wa.me/5511959605443?text=Ol%C3%A1%2C%20eu%20gostaria%20de%20saber%20mais%20sobre%20o%20Suporte%20para%20Opera%C3%A7%C3%B5es%20Digitais." class="btn btn-outline">
                     QUERO COMEÇAR
-                </a>
-
-                <a href="" class="btn btn-outline">
-                    CONSULTAR PROJETO
                 </a>
 
             </div>
