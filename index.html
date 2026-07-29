@@ -138,17 +138,6 @@ header{
     z-index:2;
 }
 
-.tag{
-    display:inline-block;
-    padding:12px 22px;
-    border-radius:50px;
-    background:#e8e8e5;
-    font-size:13px;
-    font-weight:700;
-    margin-bottom:30px;
-    letter-spacing:1px;
-}
-
 .hero h1{
     font-size:68px;
     line-height:0.95;
@@ -289,6 +278,10 @@ header{
     transition:transform .35s, box-shadow .35s;
 }
 
+.hero-content{
+    transform:translateY(-38px);
+}
+
 .portfolio-card::before{
     content:"";
     display:block;
@@ -342,6 +335,7 @@ header{
     color:#fff;
     border-radius:50px;
     overflow:hidden;
+    padding:90px 0;
 }
 
 .marketplace-grid{
@@ -352,7 +346,7 @@ header{
 }
 
 .marketplaces h2{
-    font-size:54px;
+    font-size:48px;
     line-height:1;
     letter-spacing:-3px;
     margin-bottom:30px;
@@ -500,10 +494,21 @@ footer{
         font-size:44px;
     }
 
+    .hero-content{
+        transform:translateY(-24px);
+    }
+
     .section-title,
-    .marketplaces h2,
     .consult h2{
         font-size:46px;
+    }
+
+    .marketplaces h2{
+        font-size:40px;
+    }
+
+    .marketplaces{
+        padding:70px 0;
     }
 
     .menu{
@@ -526,8 +531,22 @@ footer{
         font-size:36px;
     }
 
+    .hero-content{
+        transform:translateY(-16px);
+    }
+
     .section-title{
         font-size:38px;
+    }
+
+    .marketplaces h2{
+        font-size:32px;
+        letter-spacing:-2px;
+    }
+
+    .marketplaces{
+        border-radius:32px;
+        padding:60px 0;
     }
 
     .logo{
@@ -542,6 +561,56 @@ footer{
     .service-card,
     .price-card{
         padding:35px;
+    }
+
+    .price-tag{
+        font-size:11px;
+        margin-bottom:18px;
+        letter-spacing:.9px;
+    }
+
+    .price-card h3{
+        font-size:27px;
+        line-height:1.15;
+        margin-bottom:18px;
+    }
+
+    .price{
+        font-size:36px;
+        line-height:1.1;
+        letter-spacing:-1.5px;
+    }
+
+    .installments{
+        margin-bottom:28px;
+        font-size:14px;
+        line-height:1.55;
+    }
+
+    .price-card ul{
+        gap:14px;
+        margin-bottom:30px;
+    }
+
+    .price-card li{
+        font-size:14px;
+        line-height:1.6;
+    }
+
+    .price-card .btn{
+        padding:15px 24px;
+        font-size:13px;
+    }
+
+    #valores .section-title{
+        font-size:34px;
+        line-height:1.05;
+    }
+
+    #valores .section-description{
+        font-size:16px;
+        line-height:1.7;
+        margin-bottom:42px;
     }
 
     .portfolio-grid{
@@ -572,7 +641,20 @@ footer{
     }
 
     .consult h2{
-        font-size:40px;
+        font-size:34px;
+        line-height:1.05;
+        letter-spacing:-2px;
+    }
+
+    .consult p{
+        font-size:16px;
+        line-height:1.7;
+        margin-bottom:32px;
+    }
+
+    .consult .btn{
+        padding:15px 24px;
+        font-size:13px;
     }
 
 }
@@ -607,11 +689,7 @@ footer{
 
     <div class="container hero-grid">
 
-        <div>
-
-            <div class="tag">
-                PRESENÇA DIGITAL • POSICIONAMENTO • ESTRATÉGIA
-            </div>
+        <div class="hero-content">
 
             <h1>
                 Sua empresa precisa existir onde as pessoas procuram.
@@ -805,8 +883,7 @@ footer{
                 </h2>
 
                 <p>
-                    Hoje as pessoas procuram empresas no Google antes de comprar, pesquisar ou contratar qualquer serviço.
-                    Quem não aparece, perde espaço para quem já entendeu a força da presença online.
+                    Antes de comprar ou contratar, as pessoas pesquisam no Google. Uma presença digital bem estruturada coloca sua empresa no radar, transmite confiança e abre espaço para novas oportunidades.
                 </p>
 
             </div>
@@ -927,11 +1004,11 @@ footer{
     <div class="container">
 
         <h2>
-            Qual a necessidade da sua empresa?
+            Qual é a necessidade da sua empresa?
         </h2>
 
         <p>
-            Nos consulte. Vamos entender o seu projeto, seu nicho e o melhor caminho para construir uma presença digital forte e profissional.
+            Conte um pouco sobre o seu momento. Vamos entender o seu negócio e indicar o caminho mais estratégico para fortalecer sua presença digital e crescer.
         </p>
 
         <a href="https://wa.me/5511959605443" class="btn btn-primary">
