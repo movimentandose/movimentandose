@@ -4,8 +4,8 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<title>Movimentando-se | Presença Digital</title>
-<link rel="icon" href="assets/LOGO ATUAL MOVI BRANCO.jpeg" type="image/jpeg">
+<title>Movimentando-se | Estratégia, Estrutura & Comunicação</title>
+<link rel="icon" href="assets/LOGO FUNDO BRANCO  MOVI  (1)-Photoroom.png" type="image/png">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -41,6 +41,10 @@ section{
     padding:110px 0;
 }
 
+section[id]{
+    scroll-margin-top:110px;
+}
+
 header{
     position:fixed;
     width:100%;
@@ -60,18 +64,18 @@ header{
 }
 
 .logo{
-    font-family:'Cormorant Garamond', serif;
-    font-size:38px;
-    line-height:0.8;
-    font-weight:700;
-    letter-spacing:-2px;
+    position:relative;
+    width:190px;
+    height:80px;
+    overflow:hidden;
 }
 
-.logo span{
-    display:block;
-    margin-left:88px;
-    font-style:italic;
-    font-weight:500;
+.logo img{
+    position:absolute;
+    width:264px;
+    max-width:none;
+    left:-31px;
+    top:-103px;
 }
 
 .menu{
@@ -97,6 +101,8 @@ header{
     transition:0.3s;
     font-weight:600;
     font-size:15px;
+    line-height:1.35;
+    text-align:center;
 }
 
 .btn-primary{
@@ -140,14 +146,17 @@ header{
 
 .hero h1{
     font-size:68px;
-    line-height:0.95;
+    max-width:790px;
+    line-height:0.98;
     letter-spacing:-4px;
-    margin-bottom:35px;
+    margin-bottom:28px;
+    text-wrap:balance;
 }
 
 .hero p{
+    max-width:760px;
     font-size:19px;
-    line-height:1.9;
+    line-height:1.75;
     color:#4a4a4a;
     margin-bottom:22px;
 }
@@ -279,7 +288,7 @@ header{
 }
 
 .hero-content{
-    transform:translateY(-38px);
+    transform:translateY(-10px);
 }
 
 .portfolio-card::before{
@@ -335,7 +344,7 @@ header{
     color:#fff;
     border-radius:50px;
     overflow:hidden;
-    padding:90px 0;
+    padding:90px 70px;
 }
 
 .marketplace-grid{
@@ -450,6 +459,234 @@ header{
     color:#666;
 }
 
+.plans-intro{
+    max-width:760px;
+}
+
+#valores{
+    padding-top:70px;
+}
+
+#servicos{
+    padding-top:55px;
+    border-top:1px solid #d7d7d3;
+}
+
+.pricing-grid.detailed-plans{
+    align-items:stretch;
+}
+
+.detailed-plans .price-card{
+    display:flex;
+    flex-direction:column;
+}
+
+.plan-eyebrow,
+.plan-section-title,
+.team-role{
+    font-size:12px;
+    font-weight:800;
+    letter-spacing:1.3px;
+    text-transform:uppercase;
+}
+
+.plan-eyebrow{
+    color:#888;
+    margin-bottom:18px;
+}
+
+.featured .plan-eyebrow{
+    color:#bbb;
+}
+
+.plan-lead{
+    margin:0 0 32px;
+    color:#555;
+    line-height:1.75;
+}
+
+.plan-included{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    padding:10px 14px;
+    margin:2px 0 24px;
+    border:1px solid rgba(0,0,0,.14);
+    border-radius:30px;
+    font-size:13px;
+    font-weight:700;
+    line-height:1.35;
+}
+
+.plan-included::before{
+    content:'✓';
+    font-size:15px;
+}
+
+.featured .plan-included{
+    border-color:rgba(255,255,255,.35);
+    color:#fff;
+}
+
+#valores .price-card.featured .btn-primary{
+    background:#fff;
+    color:#111;
+}
+
+#valores .price-card.featured .btn-primary:hover{
+    background:#deded9;
+}
+
+.featured .plan-lead{
+    color:#d4d4d4;
+}
+
+.plan-block{
+    padding:26px 0;
+    border-top:1px solid rgba(0,0,0,.1);
+}
+
+.featured .plan-block{
+    border-color:rgba(255,255,255,.15);
+}
+
+.plan-section-title{
+    margin-bottom:7px;
+}
+
+.plan-owner{
+    font-family:'Cormorant Garamond', serif;
+    font-size:25px;
+    font-weight:700;
+    margin-bottom:16px;
+}
+
+.price-card .plan-block ul{
+    gap:10px;
+    margin:0;
+}
+
+.price-card .plan-block li{
+    padding-left:20px;
+    position:relative;
+    font-size:14px;
+}
+
+.price-card .plan-block li::before{
+    content:'+';
+    position:absolute;
+    left:0;
+    font-weight:700;
+}
+
+.plan-investment{
+    margin-top:auto;
+    padding-top:28px;
+    border-top:1px solid rgba(0,0,0,.1);
+}
+
+.featured .plan-investment{
+    border-color:rgba(255,255,255,.15);
+}
+
+.plan-investment .price{
+    margin:8px 0 16px;
+}
+
+.plan-summary{
+    font-size:14px;
+    line-height:1.7;
+    margin-bottom:25px;
+}
+
+.important-note{
+    margin-top:22px;
+    font-size:13px;
+    line-height:1.65;
+    color:#666;
+}
+
+.featured .important-note{
+    color:#cfcfcf;
+}
+
+.team-section{
+    padding-top:0;
+}
+
+.team-card{
+    background:#e8e8e5;
+    border-radius:35px;
+    overflow:hidden;
+    display:grid;
+    grid-template-columns:.9fr 1.1fr;
+}
+
+.team-photo{
+    min-height:520px;
+    background:linear-gradient(135deg,#1c1c1c,#555);
+    color:#fff;
+    display:flex;
+    align-items:flex-end;
+    padding:38px;
+    position:relative;
+    isolation:isolate;
+}
+
+.team-photo img{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:center 20%;
+    z-index:0;
+}
+
+.team-photo::before{
+    content:'';
+    position:absolute;
+    inset:18px;
+    border:1px solid rgba(255,255,255,.3);
+    border-radius:24px;
+    z-index:1;
+    pointer-events:none;
+}
+
+.team-content{
+    padding:65px;
+}
+
+.team-content .section-title{
+    font-size:48px;
+}
+
+.team-content > p{
+    color:#4a4a4a;
+    line-height:1.8;
+    margin-bottom:35px;
+}
+
+.team-members{
+    display:grid;
+    gap:22px;
+}
+
+.team-member{
+    padding-top:22px;
+    border-top:1px solid rgba(0,0,0,.12);
+}
+
+.team-member h3{
+    font-size:27px;
+    margin:7px 0;
+}
+
+.team-member p{
+    color:#555;
+    line-height:1.7;
+}
+
 .price-card.featured .contract-note{
     color:#d4d4d4;
 }
@@ -462,9 +699,9 @@ header{
 }
 
 .consult h2{
-    font-size:70px;
-    line-height:0.95;
-    letter-spacing:-4px;
+    font-size:44px;
+    line-height:1;
+    letter-spacing:-2px;
     margin-bottom:25px;
 }
 
@@ -488,8 +725,13 @@ footer{
 @media(max-width:980px){
 
     .hero-grid,
-    .marketplace-grid{
+    .marketplace-grid,
+    .team-card{
         grid-template-columns:1fr;
+    }
+
+    .team-photo{
+        min-height:360px;
     }
 
     .portfolio-grid{
@@ -498,10 +740,11 @@ footer{
 
     .hero h1{
         font-size:44px;
+        letter-spacing:-2.5px;
     }
 
     .hero-content{
-        transform:translateY(-24px);
+        transform:translateY(-8px);
     }
 
     .section-title,
@@ -514,7 +757,7 @@ footer{
     }
 
     .marketplaces{
-        padding:70px 0;
+        padding:70px 50px;
     }
 
     .menu{
@@ -529,16 +772,37 @@ footer{
         padding:80px 0;
     }
 
+    .section-description{
+        margin-bottom:48px;
+        font-size:16px;
+        line-height:1.75;
+    }
+
+    #servicos{
+        padding-bottom:30px;
+    }
+
+    #valores{
+        padding-top:50px;
+    }
+
+    .portfolio{
+        padding-top:45px;
+    }
+
     .hero{
         padding-top:150px;
     }
 
     .hero h1{
         font-size:36px;
+        line-height:1;
+        letter-spacing:-2px;
+        margin-bottom:24px;
     }
 
     .hero-content{
-        transform:translateY(-16px);
+        transform:none;
     }
 
     .section-title{
@@ -552,21 +816,46 @@ footer{
 
     .marketplaces{
         border-radius:32px;
-        padding:60px 0;
+        padding:60px 28px;
     }
 
     .logo{
-        font-size:32px;
+        width:155px;
+        height:67px;
     }
 
-    .logo span{
-        margin-left:72px;
+    .logo img{
+        width:218px;
+        left:-26px;
+        top:-85px;
     }
 
     .hero-card,
     .service-card,
     .price-card{
         padding:35px;
+    }
+
+    .team-card{
+        border-radius:28px;
+    }
+
+    .team-photo{
+        min-height:450px;
+        padding:28px;
+    }
+
+    .team-photo img{
+        object-position:center top;
+    }
+
+    .team-content{
+        padding:38px 28px;
+    }
+
+    .team-content .section-title{
+        font-size:36px;
+        line-height:1.05;
     }
 
     .price-tag{
@@ -673,21 +962,20 @@ footer{
 </style>
 </head>
 
-<body>
+<body id="top">
 
 <header>
 
     <div class="container nav">
 
-        <div class="logo">
-            movimentan
-            <span>do-se</span>
-        </div>
+        <a class="logo" href="#top" aria-label="Movimentando-se - início">
+            <img src="assets/LOGO FUNDO BRANCO  MOVI  (1)-Photoroom.png" alt="Movimentando-se">
+        </a>
 
         <div class="menu">
-            <a href="#servicos">SERVIÇOS</a>
+            <a href="#servicos">COMO ATUAMOS</a>
             <a href="#portfolio">PORTFÓLIO</a>
-            <a href="#marketplaces">MERCADO DIGITAL</a>
+            <a href="#marketplaces">ESTRUTURA DIGITAL</a>
             <a href="#valores">PLANOS</a>
             <a href="#contato">CONTATO</a>
         </div>
@@ -707,17 +995,17 @@ footer{
             </h1>
 
             <p>
-                Criamos sites, implantamos sua loja em marketplaces como Mercado Livre, Shopee e TikTok e posicionamos sua empresa no Google de forma estratégica para sua marca ser encontrada, transmitir confiança e crescer no digital.
+                Unimos estratégia, estrutura digital e comunicação para organizar negócios, fortalecer marcas e criar caminhos reais de crescimento — no físico, no digital ou nos dois.
             </p>
 
             <div class="hero-buttons">
 
                 <a href="https://wa.me/5511959605443" class="btn btn-primary">
-                    FALAR COM ESPECIALISTA
+                    FALAR SOBRE MEU NEGÓCIO
                 </a>
 
-                <a href="#servicos" class="btn btn-outline">
-                    CONHECER SERVIÇOS
+                <a href="#valores" class="btn btn-outline">
+                    CONHECER OS PLANOS
                 </a>
 
             </div>
@@ -727,20 +1015,20 @@ footer{
         <div class="hero-card">
 
             <h3>
-                Qual a sua necessidade?
+                O que seu negócio precisa agora?
             </h3>
 
             <div class="card-item">
-                <h4>Landing Pages & Sites</h4>
+                <h4>Organizar e posicionar</h4>
                 <p>
-                    Desenvolvemos páginas modernas, profissionais e estratégicas para gerar autoridade e transformar visitantes em clientes.
+                    Diagnóstico, estratégia, processos e direcionamento para a empresa avançar com clareza.
                 </p>
             </div>
 
             <div class="card-item">
-                <h4>Consultoria Estratégica</h4>
+                <h4>Estruturar e comunicar</h4>
                 <p>
-                    Reuniões e acompanhamento para entender seu projeto e estruturar o melhor caminho para crescimento.
+                    Site, presença digital, marketplaces, fotografia e conteúdo alinhados à sua marca.
                 </p>
             </div>
 
@@ -755,30 +1043,37 @@ footer{
     <div class="container">
 
         <h2 class="section-title">
-            Não importa o tamanho da sua empresa.<br>
-            O posicionamento muda tudo.
+            O seu negócio precisa de estrutura<br>
+            para ganhar movimento.
         </h2>
 
         <p class="section-description">
-            Criamos estratégias digitais para diferentes nichos e necessidades.
-            O objetivo é simples: fazer sua empresa aparecer, transmitir confiança e vender mais.
+            Cada empresa está em um momento. Por isso, olhamos para o todo: o que precisa ser organizado, como a marca deve se posicionar e quais ferramentas ajudam o negócio a crescer.
         </p>
 
         <div class="services-grid">
 
             <div class="service-card">
                 <div class="service-number">01</div>
-                <h3>Prestadores de Serviço</h3>
+                <h3>Estratégia & Negócios</h3>
                 <p>
-                    Estrutura online profissional para eletricistas, designers, barbeiros, clínicas, consultores, autônomos e empresas locais.
+                    Diagnóstico, organização financeira, processos, posicionamento e direcionamento para expansão.
                 </p>
             </div>
 
             <div class="service-card">
                 <div class="service-number">02</div>
-                <h3>Marketplace & Ecommerce</h3>
+                <h3>Presença & Estrutura Digital</h3>
                 <p>
-                    Auxiliamos empresas que querem começar a vender online e entrar em marketplaces de forma estratégica. Também ajudamos a expandir operações de quem já vende.
+                    Sites, e-commerce, Google, marketplaces, Bling e plataformas implantadas com orientação para autonomia.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-number">03</div>
+                <h3>Conteúdo & Comunicação</h3>
+                <p>
+                    Direção criativa, fotografia, vídeos e conteúdos que transformam estratégia em uma presença de marca consistente.
                 </p>
             </div>
 
@@ -793,13 +1088,13 @@ footer{
     <div class="container">
 
         <h2 class="section-title">
-            Projetos que ganharam<br>
-            movimento no digital.
+            Negócios que ganharam<br>
+            movimento.
         </h2>
 
         <p class="section-description">
             Algumas das empresas que já estiveram, ou ainda estão conosco.<br>
-            Todas em presença digital, atraindo mais clientes e oportunidades todos os dias.
+            Projetos construídos com estratégia, estrutura e comunicação para criar novas oportunidades.
         </p>
 
         <div class="portfolio-grid">
@@ -886,16 +1181,16 @@ footer{
 
     <div class="container marketplaces">
 
-        <div class="container marketplace-grid">
+        <div class="marketplace-grid">
 
             <div>
 
                 <h2>
-                    Entrar no digital não é mais opcional.
+                    Presença digital é parte da estrutura do negócio.
                 </h2>
 
                 <p>
-                    Antes de comprar ou contratar, as pessoas pesquisam no Google. Uma presença digital bem estruturada coloca sua empresa no radar, transmite confiança e abre espaço para novas oportunidades.
+                    A presença digital precisa acompanhar o momento e os objetivos da empresa. Estruturamos os canais certos para que sua marca seja encontrada, transmita confiança e tenha condições de operar com autonomia.
                 </p>
 
             </div>
@@ -903,16 +1198,16 @@ footer{
             <div class="market-list">
 
                 <div class="market-item">
-                    <h4>Marketplace & Ecommerce</h4>
+                    <h4>Canais que conectam sua empresa</h4>
                     <p>
-                        Entrada estratégica no mercado digital e vendas online.
+                        Site, landing page, e-commerce, Google, Mercado Livre, Shopee e TikTok Shop, de acordo com a necessidade do projeto.
                     </p>
                 </div>
 
                 <div class="market-item">
-                    <h4>Google Meu Negócio</h4>
+                    <h4>Implantação com orientação</h4>
                     <p>
-                        Estruturação da presença local para sua empresa aparecer nas buscas do Google.
+                        Mais do que configurar plataformas, orientamos processos e ajustes para que a operação siga com segurança.
                     </p>
                 </div>
 
@@ -925,90 +1220,37 @@ footer{
 </section>
 
 <section id="valores">
-
     <div class="container">
-
-        <h2 class="section-title">
-            Estrutura profissional para sua empresa crescer.
-        </h2>
-
-        <p class="section-description">
-            Escolha o serviço ideal para o momento da sua empresa ou fale conosco para um direcionamento personalizado.
-        </p>
-
-        <div class="pricing-grid">
-
-            <div class="price-card featured">
-
-                <div class="price-tag">
-                    CONSULTORIA ACOMPANHADA
-                </div>
-
-                <h3>
-                    Acompanhamento estratégico
-                </h3>
-
-                <div class="price">
-                    R$999,90<small>/mês</small>
-                </div>
-
-                <div class="installments">
-                    Ou R$5.000 em 6x, no contrato de 6 meses de acompanhamento estratégico.
-                </div>
-
-                <ul>
-                    <li>✔ Reuniões mensais ou quinzenais, conforme a necessidade do projeto</li>
-                    <li>✔ Análise de perfil e análise financeira</li>
-                    <li>✔ Direcionamento para expansão do negócio</li>
-                    <li>✔ Implantação de plataformas digitais: Mercado Livre, Shopee e TikTok</li>
-                    <li>✔ Planilha para organização</li>
-                    <li>✔ Cadastro de até 30 SKUs, do zero</li>
-                    <li>✔ Criação do site</li>
-                </ul>
-
-                <p class="contract-note">Atendimento mediante contrato. Consulte as condições.</p>
-
-                <a href="https://wa.me/5511959605443?text=Ol%C3%A1%2C%20eu%20gostaria%20de%20saber%20mais%20sobre%20a%20Consultoria%20Acompanhada." class="btn btn-primary">
-                    QUERO COMEÇAR
-                </a>
-
-            </div>
-
-            <div class="price-card">
-
-                <div class="price-tag">
-                    SUPORTE PARA QUEM JÁ VENDE
-                </div>
-
-                <h3>
-                    Suporte para operações digitais
-                </h3>
-
-                <div class="price">
-                    R$350,00<small>/mês</small>
-                </div>
-
-                <div class="installments">
-                    Apoio técnico e estratégico para a sua operação continuar crescendo.
-                </div>
-
-                <ul>
-                    <li>✔ Suporte para resolver problemas no Mercado Livre, Shopee, TikTok e Bling ERP</li>
-                    <li>✔ Instalação de impressoras</li>
-                    <li>✔ Consultoria para dúvidas sobre o funcionamento das plataformas</li>
-                    <li>✔ Configurações fiscais</li>
-                </ul>
-
-                <a href="https://wa.me/5511959605443?text=Ol%C3%A1%2C%20eu%20gostaria%20de%20saber%20mais%20sobre%20o%20Suporte%20para%20Opera%C3%A7%C3%B5es%20Digitais." class="btn btn-outline">
-                    QUERO COMEÇAR
-                </a>
-
-            </div>
-
+        <h2 class="section-title">Nossos planos</h2>
+        <p class="section-description plans-intro"><strong>Duas formas de colocar sua empresa em movimento.</strong><br>Cada negócio está em um momento diferente. Por isso, trabalhamos com uma estrutura inicial completa ou com projetos personalizados de acordo com as necessidades da empresa.</p>
+        <div class="pricing-grid detailed-plans">
+            <article class="price-card featured">
+                <div class="plan-eyebrow">Plano 01</div><h3>Estruturação do negócio</h3>
+                <p class="plan-lead">Para empresas que precisam organizar sua estrutura, fortalecer seu posicionamento e dar o próximo passo com mais clareza e estratégia.</p>
+                <div class="plan-included">Construção de site ou landing page inclusa no plano</div>
+                <div class="plan-block"><div class="plan-section-title">Estratégia &amp; Negócios</div><div class="plan-owner">Sabrina</div><ul><li>Análise do negócio e do momento atual</li><li>Análise de perfil e posicionamento</li><li>Análise financeira</li><li>Identificação de pontos fortes, necessidades e oportunidades</li><li>Direcionamento estratégico</li><li>Orientação para expansão e crescimento</li><li>Organização de processos e estrutura</li><li>Orientação sobre ferramentas e plataformas</li></ul></div>
+                <div class="plan-block"><div class="plan-section-title">Presença &amp; Estrutura Digital</div><div class="plan-owner">Sabrina</div><ul><li>Implantação de canais digitais e marketplaces</li><li>Mercado Livre, Shopee e TikTok Shop</li><li>Orientação para criação dos primeiros anúncios</li><li>Implantação e orientação do Bling</li><li>Correções e ajustes de plataformas e configurações</li></ul></div>
+                <div class="plan-block"><div class="plan-section-title">Conteúdo &amp; Comunicação</div><div class="plan-owner">Angelo</div><ul><li>Direcionamento de comunicação visual</li><li>1 shooting presencial</li><li>Captação profissional de fotos e vídeos</li><li>Tratamento das fotografias</li><li>Produção de conteúdo para redes sociais</li><li>4 vídeos editados</li><li>Conteúdos alinhados ao posicionamento da marca</li></ul></div>
+                <div class="plan-investment"><div class="plan-section-title">Investimento</div><div class="price">R$ 2.499,00</div><p class="plan-summary">Uma estrutura inicial pensada para organizar, posicionar e preparar sua empresa para o próximo movimento.</p><a href="https://wa.me/5511959605443?text=Olá%2C%20quero%20colocar%20minha%20empresa%20em%20movimento." class="btn btn-primary">QUERO COLOCAR MINHA EMPRESA EM MOVIMENTO</a><p class="important-note"><strong>Importante:</strong> não realizamos a operação diária da empresa. Estruturamos, implantamos, orientamos e corrigimos para que o negócio tenha autonomia para operar.</p></div>
+            </article>
+            <article class="price-card">
+                <div class="plan-eyebrow">Plano 02</div><h3>Projeto personalizado</h3>
+                <p class="plan-lead"><strong>Uma estrutura pensada para o momento do seu negócio.</strong><br><br>Para empresas que precisam de uma estrutura mais completa ou possuem necessidades específicas que vão além do plano inicial. Aqui, Sabrina e Angelo trabalham em conjunto, definindo o escopo de acordo com os objetivos e necessidades do projeto.</p>
+                <div class="plan-included">Construção de site ou landing page inclusa no projeto</div>
+                <div class="plan-block"><div class="plan-section-title">Estratégia &amp; Negócios</div><div class="plan-owner">Sabrina</div><ul><li>Diagnóstico completo do negócio</li><li>Análise financeira e estrutural</li><li>Estratégia de posicionamento</li><li>Organização de processos e estruturação do negócio</li><li>Planejamento de expansão</li><li>Direcionamento comercial e consultoria estratégica</li></ul></div>
+                <div class="plan-block"><div class="plan-section-title">Digital &amp; Operação</div><div class="plan-owner">Sabrina</div><ul><li>Site ou e-commerce e landing pages</li><li>Google e presença digital</li><li>Marketplaces: Mercado Livre, Shopee e TikTok Shop</li><li>Bling e integrações</li><li>Implantação de plataformas e orientação operacional</li><li>Correção de problemas e configurações</li></ul></div>
+                <div class="plan-block"><div class="plan-section-title">Marca &amp; Comunicação</div><div class="plan-owner">Sabrina + Angelo</div><ul><li>Identidade visual e posicionamento de marca</li><li>Direção criativa e fotografia profissional</li><li>Produção, shooting e edição de vídeos</li><li>Design para redes sociais e materiais institucionais</li><li>Campanhas, lançamentos e estrutura de comunicação da marca</li></ul></div>
+                <div class="plan-investment"><div class="plan-section-title">Projeto sob medida</div><p class="plan-summary">O investimento é definido de acordo com a complexidade do projeto, estruturas necessárias, quantidade de etapas, necessidades da empresa, volume de produção e prazo de execução.</p><div class="price">Investimento personalizado</div><a href="https://wa.me/5511959605443?text=Olá%2C%20gostaria%20de%20falar%20sobre%20meu%20projeto." class="btn btn-outline">FALAR SOBRE MEU PROJETO</a></div>
+            </article>
         </div>
-
     </div>
+</section>
 
+<section class="team-section">
+    <div class="container"><div class="team-card">
+        <div class="team-photo"><img src="assets/SABRINA E ANGELO.jpeg" alt="Sabrina e Angelo, equipe Movimentando-se"></div>
+        <div class="team-content"><h2 class="section-title">Por que trabalhar com a Movimentando-se?</h2><p>Não somos apenas uma agência de marketing. <strong>Nós olhamos para o negócio como um todo.</strong> Entendemos o momento da empresa, identificamos o que precisa ser estruturado e direcionamos as ferramentas necessárias para que ela avance — seja um negócio físico, digital ou híbrido.</p><div class="team-members"><div class="team-member"><div class="team-role">Estratégia, Negócios &amp; Estrutura</div><h3>Sabrina</h3><p>Transforma necessidades do negócio em estratégia, organização e direcionamento.</p></div><div class="team-member"><div class="team-role">Conteúdo &amp; Comunicação</div><h3>Angelo</h3><p>Transforma estratégia e posicionamento em imagem, vídeo e comunicação profissional.</p></div></div></div>
+    </div></div>
 </section>
 
 <section class="consult" id="contato">
@@ -1016,15 +1258,15 @@ footer{
     <div class="container">
 
         <h2>
-            Qual é a necessidade da sua empresa?
+            Vamos entender o próximo movimento da sua empresa.
         </h2>
 
         <p>
-            Conte um pouco sobre o seu momento. Vamos entender o seu negócio e indicar o caminho mais estratégico para fortalecer sua presença digital e crescer.
+            Conte em que momento seu negócio está. Sabrina e Angelo avaliam as necessidades e indicam a melhor forma de estruturar estratégia, digital e comunicação.
         </p>
 
         <a href="https://wa.me/5511959605443" class="btn btn-primary">
-            FALAR NO WHATSAPP
+            FALAR SOBRE MEU PROJETO
         </a>
 
     </div>
